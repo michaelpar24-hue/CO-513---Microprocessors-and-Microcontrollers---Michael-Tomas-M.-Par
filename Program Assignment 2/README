@@ -1,0 +1,9 @@
+Short summary of debouncing and method used:
+
+	To start, a mechanical pushbutton switch does not operate cleanly when pressed or released. The electrical signal bounces or behaves erratically between high and low for about a millisecond depending on the switch specification. Without using a debounce method, the switch may exhibit multiple presses that may cause unintended toggles, resets, or multiple increments/decrements. 
+
+	Avoiding this, I used a simple time-delay confirmation or confirm-after-delay method in my debounce code for pa2_updown_counter to delay around approximately 5ms before it confirms if the switch was pressed to prevent false triggers caused by debouncing. It is important to confirm that the button state is stable before it executes a defined function to prevent errors.
+
+Below is the link of my simulation video:
+
+https://www.youtube.com/watch?v=oIDwHbgqAdg
